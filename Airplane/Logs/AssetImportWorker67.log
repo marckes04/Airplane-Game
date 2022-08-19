@@ -1,0 +1,572 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 8042 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker67
+-projectPath
+C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/Airplane-Game/Airplane
+-logFile
+Logs/AssetImportWorker67.log
+-srvPort
+58710
+Successfully changed project path to: C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/Airplane-Game/Airplane
+C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/Airplane-Game/Airplane
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 114.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.5f1 (40eb3a945986)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/AsusPC/Desktop/MyGames/Demo/WEB/3D/Airplane-Game/Airplane/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.15.1278
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014574 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 105.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Domain Reload Profiling:
+	ReloadAssembly (761ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (514ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (111ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (322ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (69ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008986 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\Airplane-Game\Airplane\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\Airplane-Game\Airplane\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Reflection.AmbiguousMatchException: Ambiguous match found.
+  at System.RuntimeType.GetMethodImplCommon (System.String name, System.Int32 genericParameterCount, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConv, System.Type[] types, System.Reflection.ParameterModifier[] modifiers) [0x00050] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.RuntimeType.GetMethodImpl (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConv, System.Type[] types, System.Reflection.ParameterModifier[] modifiers) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.Type.GetMethod (System.String name, System.Reflection.BindingFlags bindingAttr) [0x0000e] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.Type.GetMethod (System.String name) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at GooglePlayServices.UnityCompat.get_Unity56AndAboveApplicationIdentifier () [0x00000] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+  at GooglePlayServices.UnityCompat.get_ApplicationId () [0x00000] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+  at GooglePlayServices.PlayServicesResolver..cctor () [0x0002a] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.190 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1191ms)
+		BeginReloadAssembly (208ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (450ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (302ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (0.8 MB). Loaded Objects now: 4013.
+Memory consumption went from 142.5 MB to 141.7 MB.
+Total: 4.695800 ms (FindLiveObjects: 0.503600 ms CreateObjectMapping: 0.274200 ms MarkObjects: 3.400400 ms  DeleteObjects: 0.516400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3975.627688 seconds.
+  path: Assets/sumPause/Sprites/cross.png
+  artifactKey: Guid(f8d6a10ecddc536499b91726a71980d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sumPause/Sprites/cross.png using Guid(f8d6a10ecddc536499b91726a71980d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89874034cb21eaedc02d12868c3ce50a') in 1.154337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Area730/Stylized city/Models/house_4.FBX
+  artifactKey: Guid(78ad146b0d63bb34a8212083c3ccd9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/house_4.FBX using Guid(78ad146b0d63bb34a8212083c3ccd9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ffa6b855dccaafe22121f854c260f0') in 1.295435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Area730/Stylized city/Models/soldier_1.FBX
+  artifactKey: Guid(49d7c12f3059f1040b5e03144e8e5156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/soldier_1.FBX using Guid(49d7c12f3059f1040b5e03144e8e5156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26d267ccf6ecea544977501f668b6ed') in 3.185100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Area730/Stylized city/Models/soldier1.FBX
+  artifactKey: Guid(b30cf767c9ca5464187b6815b102b655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/soldier1.FBX using Guid(b30cf767c9ca5464187b6815b102b655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efe98dabd30770c480613d1766a0399') in 0.255756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Tree_Textures/translucency_gloss.png
+  artifactKey: Guid(f52d0be72c1f80949a0650e049c5d114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/translucency_gloss.png using Guid(f52d0be72c1f80949a0650e049c5d114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48eb8193b5899037e69c252f4f132e6') in 0.165615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Area730/Stylized city/Models/tree_5.FBX
+  artifactKey: Guid(30362d586b71d1c47b69ac9ece2fdcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/tree_5.FBX using Guid(30362d586b71d1c47b69ac9ece2fdcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d42042b3706407659135fcb36316bf') in 0.241830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Tree.prefab
+  artifactKey: Guid(7fed79d42a7b5be41845c7ecc623a2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree.prefab using Guid(7fed79d42a7b5be41845c7ecc623a2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e906bde4c8eca3958e13bedc3b9147bb') in 1.258837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Area730/Stylized city/Models/road.FBX
+  artifactKey: Guid(8dcc471b08b73ec4ea7ad68ade44d84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/road.FBX using Guid(8dcc471b08b73ec4ea7ad68ade44d84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb77be8a3fa92566bf117c993fd555a8') in 0.295019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tree_Textures/shadow.png
+  artifactKey: Guid(9a5e053f09decf845ab93e5593f02082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/shadow.png using Guid(9a5e053f09decf845ab93e5593f02082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ee91ebe5b4159b8966719aae00d129') in 0.010321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/sumPause/Sprites/pause.png
+  artifactKey: Guid(631cfd0c09f2f3d47ac1b4297b604a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sumPause/Sprites/pause.png using Guid(631cfd0c09f2f3d47ac1b4297b604a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92842d1ce28b14493fd3c82b85a21f69') in 0.271847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/New Terrain 8.asset
+  artifactKey: Guid(d6be1ef762e876a44adeeb360d2d6209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 8.asset using Guid(d6be1ef762e876a44adeeb360d2d6209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7886a7c7efc64018845ddb4c016f4316') in 0.631643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Cloud-04.fbx
+  artifactKey: Guid(d75090a6aa124b747a842bf2b5ae80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Cloud-04.fbx using Guid(d75090a6aa124b747a842bf2b5ae80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e396c1b554213786b3759711909c3d') in 0.548687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Area730/Stylized city/Models/man_4.FBX
+  artifactKey: Guid(696a4268387dead4588cb7fe7cc7bf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/man_4.FBX using Guid(696a4268387dead4588cb7fe7cc7bf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036909f68d8c594197c7a81358e22cb5') in 0.462008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/New Terrain 19.asset
+  artifactKey: Guid(7ce09417a7e4dc24ab4b273b8be84c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 19.asset using Guid(7ce09417a7e4dc24ab4b273b8be84c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0517c5a88ae90a515062d6ed94bf9754') in 0.747325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/sumPause/Sprites/cross 1.png
+  artifactKey: Guid(0808696e0a1ca134ab71fdfbda31da5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sumPause/Sprites/cross 1.png using Guid(0808696e0a1ca134ab71fdfbda31da5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209816d0416381abc5db8e3a30bf6a29') in 0.095900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-08.fbx
+  artifactKey: Guid(721552ed1838a6d4b85a2e7372560f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-08.fbx using Guid(721552ed1838a6d4b85a2e7372560f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3aa1a951e7eeb927c0bc26a7a0de52') in 0.348646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Cloud-05.fbx
+  artifactKey: Guid(66b62323586a05541bdf731d7ce0497d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Cloud-05.fbx using Guid(66b62323586a05541bdf731d7ce0497d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70dbe847211d2776202ab21a63f593f0') in 0.049700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Area730/Stylized city/Models
+  artifactKey: Guid(a9ed814b5ac6f164dbb3982676106560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models using Guid(a9ed814b5ac6f164dbb3982676106560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d898959c0ec1c983d7a4c5dd0449dc') in 0.005535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Area730/Stylized city/Models/guy.FBX
+  artifactKey: Guid(3047e422f897aa9438aaa526a32e2f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/guy.FBX using Guid(3047e422f897aa9438aaa526a32e2f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856ce9b1663d23c52c30b56aaa3eb014') in 0.258250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Area730/Stylized city/Models/house_6.FBX
+  artifactKey: Guid(c7178c5c290c91e4683375c3cac48b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/house_6.FBX using Guid(c7178c5c290c91e4683375c3cac48b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44dde4f28a4d3f137a7ca388b7412b2') in 0.290256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-02.fbx
+  artifactKey: Guid(60dac4541678ff54a9690e314df2a72d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-02.fbx using Guid(60dac4541678ff54a9690e314df2a72d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b64c22584397f022517ee8820d98edf') in 0.025036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-04.fbx
+  artifactKey: Guid(adbb845018a19c84ab980437a3da2ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-04.fbx using Guid(adbb845018a19c84ab980437a3da2ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac68d5c6a8cf8da0dbca3a5d90ddecc') in 0.516597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/New Terrain 17.asset
+  artifactKey: Guid(d7d5c6b9996115645accf7a28efc20a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 17.asset using Guid(d7d5c6b9996115645accf7a28efc20a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4034331517745098a000c1c88bbbe4a2') in 0.500184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Area730/Stylized city/Models/grass_plane1.FBX
+  artifactKey: Guid(07f823bd17aa6ef49a1ff69e1c404738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/grass_plane1.FBX using Guid(07f823bd17aa6ef49a1ff69e1c404738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301ffd09c0b45e1da20139e46022ff24') in 0.112152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/FullTiltBoogie/Unity_2018-01-07_01-05-44.png
+  artifactKey: Guid(b1b188d7a979c9b438c355c5a3674641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FullTiltBoogie/Unity_2018-01-07_01-05-44.png using Guid(b1b188d7a979c9b438c355c5a3674641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e340fbd3adb93bb1087c1bc5a4ee7b3') in 0.519002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/sumPause/Sprites/right 1.png
+  artifactKey: Guid(a32a5988729b3514d828353225c0971c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sumPause/Sprites/right 1.png using Guid(a32a5988729b3514d828353225c0971c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc0c880f1639fcd0c29ed8b4bb23851') in 0.133520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Area730/Stylized city/Models/house_3.FBX
+  artifactKey: Guid(f83d560db2e914c419f6a19524eecd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/house_3.FBX using Guid(f83d560db2e914c419f6a19524eecd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2965e2b0ed02b38499d55e871c69e64') in 0.246058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Area730/Stylized city/Models/house_5.FBX
+  artifactKey: Guid(f02ca62aa68ec094a962bbd9603e6d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/house_5.FBX using Guid(f02ca62aa68ec094a962bbd9603e6d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a6bb32862a76a70362922819a2acae') in 0.174499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Area730/Stylized city/Models/mushroom1.FBX
+  artifactKey: Guid(53a6cb1d158cdfd478c6e76075ad7cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/mushroom1.FBX using Guid(53a6cb1d158cdfd478c6e76075ad7cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774d3baf723e44dff885014f68fbea4f') in 0.432966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Area730/Stylized city/Models/mushroom2.FBX
+  artifactKey: Guid(ffa657c80d71d5c4e83e431436ca49c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/mushroom2.FBX using Guid(ffa657c80d71d5c4e83e431436ca49c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26cc4e1be3bbad484c89f45b7e541d14') in 0.306546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/sumPause/Sprites/stop.png
+  artifactKey: Guid(6ac9a665502ce0a4fa2b92c8c17bea65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sumPause/Sprites/stop.png using Guid(6ac9a665502ce0a4fa2b92c8c17bea65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ae527c32613b1fc42f86417749c70a') in 0.239449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/New Terrain 18.asset
+  artifactKey: Guid(91abe9d4fd02d184fb56b93ed2080523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 18.asset using Guid(91abe9d4fd02d184fb56b93ed2080523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4bd6d180cdfe7e34408de29328d50ee') in 0.200566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-07.fbx
+  artifactKey: Guid(486a1262f9b832045bfdfaa7d6114710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-07.fbx using Guid(486a1262f9b832045bfdfaa7d6114710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837bca1e69a91e42d69f2ce94343ea18') in 1.720692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Area730/Stylized city/Models/tree_6.FBX
+  artifactKey: Guid(45e438e80c2860545b63beb8d6718edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/tree_6.FBX using Guid(45e438e80c2860545b63beb8d6718edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741da2273b886b94022e01d166cfe7f4') in 0.589601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-03.fbx
+  artifactKey: Guid(7ffdb0373582d034c84b5878d320c352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFantasyClouds/Models/RG_Terrain-Mesh-03.fbx using Guid(7ffdb0373582d034c84b5878d320c352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d1e4edfb4cd3bd318e576f432109de') in 0.272486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Area730/Stylized city/Models/tank.FBX
+  artifactKey: Guid(cbac5c40bbb3a7b4d9c54abfbe7e3e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/tank.FBX using Guid(cbac5c40bbb3a7b4d9c54abfbe7e3e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ae6c8b6c53ba05ab0952efcb15a9a9') in 4.517550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Area730/Stylized city/Models/grass_plane2.FBX
+  artifactKey: Guid(5c88ffdd9cfa0cc48b669a42b2b60146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/grass_plane2.FBX using Guid(5c88ffdd9cfa0cc48b669a42b2b60146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f9c5e8a63408909c430f1c2c9c66c1') in 2.471531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Area730/Stylized city/Models/house_2.FBX
+  artifactKey: Guid(feda6fd4bee2edf439dd3b4be844343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/house_2.FBX using Guid(feda6fd4bee2edf439dd3b4be844343a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b08dae7aebdee6497479fe623c8497a') in 0.241358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Area730/Stylized city/Models/war_plane_1.FBX
+  artifactKey: Guid(9d593e207beea41499d4c05d6ef958b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Area730/Stylized city/Models/war_plane_1.FBX using Guid(9d593e207beea41499d4c05d6ef958b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edbeb67924d62e6de842511661a1959d') in 0.454661 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011897 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\Airplane-Game\Airplane\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\Airplane-Game\Airplane\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Reflection.AmbiguousMatchException: Ambiguous match found.
+  at System.RuntimeType.GetMethodImplCommon (System.String name, System.Int32 genericParameterCount, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConv, System.Type[] types, System.Reflection.ParameterModifier[] modifiers) [0x00050] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.RuntimeType.GetMethodImpl (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConv, System.Type[] types, System.Reflection.ParameterModifier[] modifiers) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.Type.GetMethod (System.String name, System.Reflection.BindingFlags bindingAttr) [0x0000e] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.Type.GetMethod (System.String name) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at GooglePlayServices.UnityCompat.get_Unity56AndAboveApplicationIdentifier () [0x00000] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+  at GooglePlayServices.UnityCompat.get_ApplicationId () [0x00000] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+  at GooglePlayServices.PlayServicesResolver..cctor () [0x0002a] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.059 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3060ms)
+		BeginReloadAssembly (334ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (2616ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (2114ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (1969ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (1.2 MB). Loaded Objects now: 4070.
+Memory consumption went from 153.7 MB to 152.5 MB.
+Total: 39.008000 ms (FindLiveObjects: 0.417700 ms CreateObjectMapping: 0.190400 ms MarkObjects: 37.782000 ms  DeleteObjects: 0.616800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008426 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\Airplane-Game\Airplane\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AsusPC\Desktop\MyGames\Demo\WEB\3D\Airplane-Game\Airplane\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Reflection.AmbiguousMatchException: Ambiguous match found.
+  at System.RuntimeType.GetMethodImplCommon (System.String name, System.Int32 genericParameterCount, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConv, System.Type[] types, System.Reflection.ParameterModifier[] modifiers) [0x00050] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.RuntimeType.GetMethodImpl (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConv, System.Type[] types, System.Reflection.ParameterModifier[] modifiers) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.Type.GetMethod (System.String name, System.Reflection.BindingFlags bindingAttr) [0x0000e] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.Type.GetMethod (System.String name) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at GooglePlayServices.UnityCompat.get_Unity56AndAboveApplicationIdentifier () [0x00000] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+  at GooglePlayServices.UnityCompat.get_ApplicationId () [0x00000] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+  at GooglePlayServices.PlayServicesResolver..cctor () [0x0002a] in <1877a7de1fce4dbf9ed2d0e651eb9a0e>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.068 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1069ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (845ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (266ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3493 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (0.8 MB). Loaded Objects now: 4073.
+Memory consumption went from 153.3 MB to 152.5 MB.
+Total: 3.823500 ms (FindLiveObjects: 0.276500 ms CreateObjectMapping: 0.152700 ms MarkObjects: 3.012700 ms  DeleteObjects: 0.380800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 726.381477 seconds.
+  path: Assets/CombinedMeshes/Island2/Rocks/Combined Standard Mesh_MainTex.png
+  artifactKey: Guid(a9f6ba8fdba475b42b24a2624eaf8bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CombinedMeshes/Island2/Rocks/Combined Standard Mesh_MainTex.png using Guid(a9f6ba8fdba475b42b24a2624eaf8bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abba32a682e79683c91df2a3ae63f8a9') in 2.660404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CombinedMeshes/Island2/PalmTree/Combined Standard Mesh_MainTex.png
+  artifactKey: Guid(01b3768888ba71e47ab00a0698c8733c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CombinedMeshes/Island2/PalmTree/Combined Standard Mesh_MainTex.png using Guid(01b3768888ba71e47ab00a0698c8733c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a9563e3018c69cf2b3a28e357ca7f0') in 0.224909 seconds 
