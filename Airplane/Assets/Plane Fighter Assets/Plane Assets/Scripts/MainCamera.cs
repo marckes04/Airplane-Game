@@ -21,6 +21,7 @@ public class MainCamera : MonoBehaviour
     private bool cameraEndScreen = false;
 
     //Add Player Controller
+    private PlayerController playerController;
 
 
     void Start()
@@ -31,20 +32,20 @@ public class MainCamera : MonoBehaviour
         player = GameObject.FindWithTag("Player1");
 
         // get the player controller
-
-
+        playerController = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerController>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-
+        SwitchCameraType();
     }
 
     private void LateUpdate()
     {
       LerpCameraToGameStart();
+        cameraFollowPlayer();
     }
 
     void LerpCameraToGameStart()
@@ -72,7 +73,42 @@ public class MainCamera : MonoBehaviour
                 print("Camera Stop Lerping");
 
                 // call player take off Animation
+                playerController.startTakeOff();
             }
+        }
+    }
+
+    void cameraFollowPlayer()
+    {
+        if (CameraLockToPlayer && !cameraEndScreen)
+        {
+            if (CameraType == 0)
+            {
+                transform.position = new Vector3(
+                    Mathf.Lerp(transform.position.x, player.transform.position.x, Time.deltaTime * 5f),
+                    Mathf.Lerp(transform.position.y, player.transform.position.y + 20f, Time.deltaTime + 5f),
+                   player.transform.position.z - 80f);
+
+                transform.eulerAngles = new Vector3(cameraTilt, 0f, 0f);
+            }
+            else
+            {
+                transform.position = new Vector3(250f,90f,player.transform.position.z-120f);
+
+                transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            }
+        }
+    }//Follow Player
+
+    void SwitchCameraType()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (CameraType == 0)
+                CameraType = 1;
+            
+            else
+             CameraType = 0;
         }
     }
 }

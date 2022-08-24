@@ -3050,6 +3050,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb3216a7b2e2b534ab05b6569a753957, type: 3}
+--- !u!1 &940096545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 162818, guid: 74ebb5a6194b59c48a4a2b04bb662bad, type: 3}
+  m_PrefabInstance: {fileID: 1988338886385624140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &940096546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940096545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450ce885c55d66f45816ee020583ab28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardVelocity: 100
+  minimumSpeed: -1500
+  maxHorizontalSpeed: 250
+  currentHorizontalSpeed: 0
+  maxVerticalSpeed: 250
+  currentVerticalSpeed: 0
+  currentRotation: 0
+  left_BorderLimitX: 130
+  right_BorderLimitX: 370
+  vertical_UpperLimit: 160
+  vertical_LowerLimit: 40
+  bonus_HorizontalSpeed: 0
+  boost_HorizontalSpeed: 0
+  startSpeed: 40
+  Moving: 0
 --- !u!1001 &943607935
 PrefabInstance:
   m_ObjectHideFlags: 0

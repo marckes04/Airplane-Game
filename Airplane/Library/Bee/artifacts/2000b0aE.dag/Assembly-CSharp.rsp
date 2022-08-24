@@ -361,6 +361,7 @@
 "Assets/Plane Fighter Assets/Plane Assets/FarlandSkies/Demo/Scripts/Skybox/SkyboxRotator.cs"
 "Assets/Plane Fighter Assets/Plane Assets/FullTiltBoogie/RotateFlareHolder.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/MainCamera.cs"
+"Assets/Plane Fighter Assets/Plane Assets/Scripts/Player Scripts/PlayerController.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/UI/MainMenuController.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Standard Assets/Character Controllers/Sources/Scripts/MouseLook.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs"
