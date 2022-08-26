@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 storedVelocity;
 
-    
+
     private bool speed_Boosted = false;
     private int speed_Boost_Value = 100;
     private float speed_Boost_Timeout = 5f;
@@ -57,23 +57,177 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        CheckBorderPlayers();
+        CheckControlInput();
+        KeyboardInput();
     }
 
     void FixedUpdate()
     {
-        if(Moving)
+        if (Moving)
         {
             myBody.velocity = new Vector3(currentHorizontalSpeed, currentVerticalSpeed, myBody.velocity.z);
             myBody.transform.eulerAngles = currentAngle;
         }
     }
+
+    public void MoveRight()
+    {
+        currentAngle = new Vector3(
+            Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime),
+            Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
+            Mathf.LerpAngle(currentAngle.z, 70f, Time.deltaTime));
+
+        currentHorizontalSpeed = Mathf.Lerp(currentHorizontalSpeed,
+            maxHorizontalSpeed + bonus_HorizontalSpeed + boost_HorizontalSpeed, Time.deltaTime);
+    }//Move Right
+
+    public void MoveLeft()
+    {
+        currentAngle = new Vector3(
+            Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime),
+            Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
+            Mathf.LerpAngle(currentAngle.z, -70f, Time.deltaTime));
+
+        currentHorizontalSpeed = Mathf.Lerp(currentHorizontalSpeed,
+            -maxHorizontalSpeed + -bonus_HorizontalSpeed + -boost_HorizontalSpeed, Time.deltaTime);
+    }//Move Left
+
+
+    public void MoveUp()
+    {
+        currentAngle = new Vector3(
+            Mathf.LerpAngle(currentAngle.x, -35f, Time.deltaTime),
+            currentAngle.y, currentAngle.z);
+
+        currentVerticalSpeed = Mathf.Lerp(currentVerticalSpeed, maxVerticalSpeed, Time.deltaTime / 2f);
+
+    }//Move Up
+
+    public void MoveDown()
+    {
+        currentAngle = new Vector3(
+            Mathf.LerpAngle(currentAngle.x, 35f, Time.deltaTime),
+            currentAngle.y, currentAngle.z);
+
+        currentVerticalSpeed = Mathf.Lerp(currentVerticalSpeed, -maxVerticalSpeed, Time.deltaTime / 2f);
+
+    }//Move Down
+
+    void KeyboardInput()
+    {
+        if (Moving)
+        {
+            if (Input.GetKey(KeyCode.A))
+            {
+                MoveLeft();
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                MoveRight();
+            }
+
+            if (Input.GetKey(KeyCode.W))
+            {
+                MoveUp();
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                MoveDown();
+            }
+        }
+    }
+
+    void CheckControlInput()
+    {
+        if (Moving)
+        {
+            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            {
+                currentHorizontalSpeed = Mathf.Lerp(currentHorizontalSpeed,0f,Time.deltaTime / 0.1f);
+                currentAngle = new Vector3(
+             Mathf.LerpAngle(currentAngle.x, currentAngle.x, Time.deltaTime),
+             Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
+             Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime*2f));
+            }
+
+            if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+            {
+                currentVerticalSpeed = Mathf.Lerp(currentVerticalSpeed, 0f, Time.deltaTime / 0.1f);
+
+                currentAngle = new Vector3(
+             Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime * 2f),
+             Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
+             Mathf.LerpAngle(currentAngle.z, currentAngle.z, Time.deltaTime));
+           
+            }
+        }
+    }
+
+    void CheckBorderPlayers()
+    {
+        if (Moving)
+        {
+            if (transform.position.y > vertical_UpperLimit)
+            {
+                transform.position = new Vector3(transform.position.x, vertical_UpperLimit -1, 
+                    transform.position.z);
+
+                currentVerticalSpeed = 0;
+                Input.ResetInputAxes();
+            }
+
+            if (transform.position.y < vertical_LowerLimit)
+            {
+                transform.position = new Vector3(transform.position.x, vertical_LowerLimit + 1,
+                    transform.position.z);
+
+                currentVerticalSpeed = 0;
+                Input.ResetInputAxes();
+            }
+
+            if(transform.position.x < left_BorderLimitX)
+            {
+                transform.position = new Vector3(left_BorderLimitX + 1, transform.position.y,
+                    transform.position.z);
+
+                currentHorizontalSpeed = 0f;
+
+                currentAngle = new Vector3(
+                    Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime),
+                    Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
+                    Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime *2f));
+
+                Input.ResetInputAxes();
+
+            }
+
+            if (transform.position.x > right_BorderLimitX)
+            {
+                transform.position = new Vector3(right_BorderLimitX - 1, transform.position.y,
+                    transform.position.z);
+
+                currentHorizontalSpeed = 0f;
+
+                currentAngle = new Vector3(
+                    Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime),
+                    Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
+                    Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime * 2f));
+
+                Input.ResetInputAxes();
+
+            }
+
+
+        }
+    }//Player border
 
     public void startTakeOff()
     {
