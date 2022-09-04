@@ -591,6 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4077859673953138}
   - component: {fileID: 54585626191909258}
+  - component: {fileID: 6575100056998119342}
   m_Layer: 8
   m_Name: BigWideClouds
   m_TagString: cloud
@@ -636,3 +637,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6575100056998119342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992130706947282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5cf4460f7bd90a4c9d9ed82c929d620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

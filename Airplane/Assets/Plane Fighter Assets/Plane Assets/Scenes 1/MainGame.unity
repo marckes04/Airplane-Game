@@ -1967,6 +1967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 515690837}
+  - component: {fileID: 515690838}
   m_Layer: 0
   m_Name: CloudSpawner
   m_TagString: Untagged
@@ -1989,6 +1990,23 @@ Transform:
   m_Father: {fileID: 592785331}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &515690838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515690836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82547f5124185f241ad34a15ee8f2512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftSide_SpawnLimit_LX: -3200
+  leftSide_SpawnLimit_RX: 0
+  rightSide_SpawnLimit_LX: 200
+  rightSide_SpawnLimit_RX: 4200
+  cloudLiftHeightPlus: 50
 --- !u!1001 &527581602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6691,8 +6709,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1925467454}
+  - component: {fileID: 1925467455}
   m_Layer: 0
-  m_Name: EnemyAirSpawner
+  m_Name: EnemyPlaneSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6713,6 +6732,19 @@ Transform:
   m_Father: {fileID: 592785331}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925467455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925467452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec9ff26ad6f84f4e9ac79e1e5e9792d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planeYSpawnPos: 90
 --- !u!1 &1955205305
 GameObject:
   m_ObjectHideFlags: 0
