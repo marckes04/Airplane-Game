@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
     private float speed_Boost_Timeout = 5f;
     private float speed_Boost_Timer = 0f;
 
+    private EnemyPlaneSpawner enemyPlaneSpawner;
+    private BallonSpawner ballonSpawner;
+
     void Awake()
     {
         anim = GetComponent<Animation>();
@@ -57,7 +60,8 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
-
+        enemyPlaneSpawner = GameObject.Find("EnemyPlaneSpawner").GetComponent<EnemyPlaneSpawner>();
+        ballonSpawner = GameObject.Find("AirBalloonSpawner").GetComponent<BallonSpawner>();
     }
 
     // Update is called once per frame
@@ -247,5 +251,8 @@ public class PlayerController : MonoBehaviour
         {
             b.enabled = true;
         }
+
+        enemyPlaneSpawner.StartSpawningPlanes();
+        ballonSpawner.startSpawningBalloons();
     }
 }

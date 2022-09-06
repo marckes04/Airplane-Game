@@ -14,7 +14,7 @@ public class EnemyPlaneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.z < player.transform.position.z-300)
+        if(transform.position.z < player.transform.position.z - 300)
         {
             gameObject.SetActive(false);
         }

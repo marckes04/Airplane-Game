@@ -135,14 +135,13 @@ GameObject:
   - component: {fileID: 54526754872670796}
   - component: {fileID: 65741802005869128}
   - component: {fileID: -8366487996428780301}
-  - component: {fileID: 3545736523116707871}
   m_Layer: 0
   m_Name: bomber
   m_TagString: enemyAir
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4116071032949222
 Transform:
   m_ObjectHideFlags: 0
@@ -218,18 +217,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 047ebf089159b83448b605232edf293d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3545736523116707871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088946108673964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 141aee30c7101b643b77a5236456bef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1103317757464116
