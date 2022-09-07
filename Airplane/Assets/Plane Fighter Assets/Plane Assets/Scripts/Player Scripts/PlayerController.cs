@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
     private EnemyPlaneSpawner enemyPlaneSpawner;
     private BallonSpawner ballonSpawner;
+    private PickUpSpawner pickUpSpawner;
 
     void Awake()
     {
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
     {
         enemyPlaneSpawner = GameObject.Find("EnemyPlaneSpawner").GetComponent<EnemyPlaneSpawner>();
         ballonSpawner = GameObject.Find("AirBalloonSpawner").GetComponent<BallonSpawner>();
+        pickUpSpawner = GameObject.Find("PickUpSpawner").GetComponent<PickUpSpawner>();
     }
 
     // Update is called once per frame
@@ -78,6 +80,8 @@ public class PlayerController : MonoBehaviour
         {
             myBody.velocity = new Vector3(currentHorizontalSpeed, currentVerticalSpeed, myBody.velocity.z);
             myBody.transform.eulerAngles = currentAngle;
+
+            SpeedBoost();
         }
     }
 
@@ -155,11 +159,11 @@ public class PlayerController : MonoBehaviour
         {
             if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
             {
-                currentHorizontalSpeed = Mathf.Lerp(currentHorizontalSpeed,0f,Time.deltaTime / 0.1f);
+                currentHorizontalSpeed = Mathf.Lerp(currentHorizontalSpeed, 0f, Time.deltaTime / 0.1f);
                 currentAngle = new Vector3(
              Mathf.LerpAngle(currentAngle.x, currentAngle.x, Time.deltaTime),
              Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
-             Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime*2f));
+             Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime * 2f));
             }
 
             if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
@@ -170,7 +174,7 @@ public class PlayerController : MonoBehaviour
              Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime * 2f),
              Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
              Mathf.LerpAngle(currentAngle.z, currentAngle.z, Time.deltaTime));
-           
+
             }
         }
     }
@@ -181,7 +185,7 @@ public class PlayerController : MonoBehaviour
         {
             if (transform.position.y > vertical_UpperLimit)
             {
-                transform.position = new Vector3(transform.position.x, vertical_UpperLimit -1, 
+                transform.position = new Vector3(transform.position.x, vertical_UpperLimit - 1,
                     transform.position.z);
 
                 currentVerticalSpeed = 0;
@@ -197,7 +201,7 @@ public class PlayerController : MonoBehaviour
                 Input.ResetInputAxes();
             }
 
-            if(transform.position.x < left_BorderLimitX)
+            if (transform.position.x < left_BorderLimitX)
             {
                 transform.position = new Vector3(left_BorderLimitX + 1, transform.position.y,
                     transform.position.z);
@@ -207,7 +211,7 @@ public class PlayerController : MonoBehaviour
                 currentAngle = new Vector3(
                     Mathf.LerpAngle(currentAngle.x, 0f, Time.deltaTime),
                     Mathf.LerpAngle(currentAngle.y, 0f, Time.deltaTime),
-                    Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime *2f));
+                    Mathf.LerpAngle(currentAngle.z, 0f, Time.deltaTime * 2f));
 
                 Input.ResetInputAxes();
 
@@ -247,12 +251,68 @@ public class PlayerController : MonoBehaviour
 
         BoxCollider[] boxcolls = GetComponents<BoxCollider>();
 
-        foreach(var b in boxcolls)
+        foreach (var b in boxcolls)
         {
             b.enabled = true;
         }
 
         enemyPlaneSpawner.StartSpawningPlanes();
-        ballonSpawner.startSpawningBalloons();
+        ballonSpawner.StartSpawningBalloons();
+        pickUpSpawner.StartSpawningPickUps();
+    }
+
+    void SpeedBoost()
+    {
+        if (speed_Boosted)
+        {
+            speed_Boost_Timer += Time.deltaTime;
+
+            if (speed_Boost_Timer < speed_Boost_Timeout)
+            {
+                myBody.AddRelativeForce(Vector3.forward * speed_Boost_Value);
+            }
+            else
+            {
+                speed_Boosted = false;
+                speed_Boost_Timer = 0f;
+
+                myBody.velocity = storedVelocity;
+                myBody.isKinematic = false;
+                //Resume();
+            }
+        }
+    }
+
+    public void PlayerCrashed()
+    {
+        speed_Boosted = false;
+
+        myBody.useGravity = true;
+        myBody.mass = 2;
+        myBody.transform.Rotate(0.2f, 0.2f, 0.2f);
+
+        GetComponent<PlayerController>().enabled = false;
+        StartCoroutine(PlayerDiedRestart());
+    }
+
+     IEnumerator PlayerDiedRestart()
+    {
+        yield return new WaitForSeconds(3f);
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+       
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Fuel") { }
+        if (other.tag == "ScoreMultiplier") { }
+        if (other.tag == "SpeedBoost") {
+            speed_Boosted = true;
+        }
+        if (other.tag == "enemyAir") {
+            PlayerCrashed();
+        }
     }
 }

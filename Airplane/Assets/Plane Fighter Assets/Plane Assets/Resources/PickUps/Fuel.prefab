@@ -59,10 +59,11 @@ GameObject:
   - component: {fileID: 4005582050974924}
   - component: {fileID: 33933877896135034}
   - component: {fileID: 23734612490441968}
+  - component: {fileID: 8187544681395755415}
   - component: {fileID: 65648666969739852}
   m_Layer: 0
   m_Name: Fuel
-  m_TagString: pickUp
+  m_TagString: Fuel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,6 +134,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8187544681395755415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533764243736376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6631770284552f84bb05443ad432c5a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &65648666969739852
 BoxCollider:
   m_ObjectHideFlags: 0

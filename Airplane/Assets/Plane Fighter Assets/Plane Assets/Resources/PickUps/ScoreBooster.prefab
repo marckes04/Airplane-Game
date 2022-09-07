@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 33001535465926596}
   - component: {fileID: 135510790601469388}
   - component: {fileID: 23460941185613278}
+  - component: {fileID: -2285924678898162330}
   m_Layer: 0
   m_Name: ScoreBooster
-  m_TagString: pickUp
+  m_TagString: ScoreMultiplier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +98,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-2285924678898162330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380362693876972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58caa5447f628f446899c063b40f48fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

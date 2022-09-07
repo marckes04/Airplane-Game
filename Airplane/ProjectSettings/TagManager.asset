@@ -8,6 +8,11 @@ TagManager:
   - island
   - player
   - Player1
+  - enemyAir
+  - pickUp
+  - ScoreMultiplier
+  - Fuel
+  - SpeedBoost
   layers:
   - Default
   - TransparentFX

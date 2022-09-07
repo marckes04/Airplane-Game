@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 198570590749546466}
   - component: {fileID: 199740565739391716}
   - component: {fileID: 65807863145333500}
+  - component: {fileID: 4875781420693517048}
   m_Layer: 0
   m_Name: SpeedBooster
-  m_TagString: pickUp
+  m_TagString: SpeedBoost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4775,7 +4776,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4839,3 +4839,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13, y: 13, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4875781420693517048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496133699792408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fd779ef0ad61247afecabb1ada2818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

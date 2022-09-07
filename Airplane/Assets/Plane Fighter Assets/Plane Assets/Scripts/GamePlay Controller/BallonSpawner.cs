@@ -38,7 +38,7 @@ public class BallonSpawner : MonoBehaviour
         }
   }
 
-    public void startSpawningBalloons()
+    public void StartSpawningBalloons()
     {
         continueSpawning = true;
         StartCoroutine(SpawnBallon());
