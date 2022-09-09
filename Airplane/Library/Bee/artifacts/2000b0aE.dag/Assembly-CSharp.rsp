@@ -369,6 +369,7 @@
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/CloudScript.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/EnemyPlaneScript.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/FuelScript.cs"
+"Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/HUDController.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/IslandScript.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/ScoreBooster.cs"
 "Assets/Plane Fighter Assets/Plane Assets/Scripts/GamePlay Elements/SpeedBooster.cs"

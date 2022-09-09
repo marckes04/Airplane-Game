@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
     private BallonSpawner ballonSpawner;
     private PickUpSpawner pickUpSpawner;
 
+    private HUDController hudController;
+
     void Awake()
     {
         anim = GetComponent<Animation>();
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
         enemyPlaneSpawner = GameObject.Find("EnemyPlaneSpawner").GetComponent<EnemyPlaneSpawner>();
         ballonSpawner = GameObject.Find("AirBalloonSpawner").GetComponent<BallonSpawner>();
         pickUpSpawner = GameObject.Find("PickUpSpawner").GetComponent<PickUpSpawner>();
+        hudController = GameObject.Find("HUD Controller").GetComponent<HUDController>();
     }
 
     // Update is called once per frame
@@ -259,6 +262,7 @@ public class PlayerController : MonoBehaviour
         enemyPlaneSpawner.StartSpawningPlanes();
         ballonSpawner.StartSpawningBalloons();
         pickUpSpawner.StartSpawningPickUps();
+        hudController.ActivateHUD(true);
     }
 
     void SpeedBoost()
@@ -306,8 +310,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Fuel") { }
-        if (other.tag == "ScoreMultiplier") { }
+        if (other.tag == "Fuel") {
+            hudController.FuelCollected();
+        }
+        if (other.tag == "ScoreMultiplier") {
+            hudController.IncreaseScore();
+        }
         if (other.tag == "SpeedBoost") {
             speed_Boosted = true;
         }
